@@ -1,0 +1,30 @@
+{
+  "name": "e2e-testing",
+  "version": "1.0.0",
+  "description": "End to end testing example for WordCamp Bucharest 2020",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:local": "cypress run",
+    "cypress:run": "cypress run --record --key ${record_key}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abaicus/e2e-testing.git"
+  },
+  "keywords": [
+    "e2e",
+    "wordpress",
+    "wordcamp",
+    "bucharest",
+    "2020"
+  ],
+  "author": "Andrei Baicus <andrei@themeisle.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/abaicus/e2e-testing/issues"
+  },
+  "homepage": "https://github.com/abaicus/e2e-testing#readme",
+  "dependencies": {
+    "cypress": "^3.8.3"
+  }
+}
