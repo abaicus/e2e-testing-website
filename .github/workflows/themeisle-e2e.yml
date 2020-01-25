@@ -1,0 +1,17 @@
+name: WordCamp Bucharest 2020 end to end testing
+on: 
+  schedule:
+  - cron: "0 0 * * *"
+env:
+  record_key: ${{ secrets.CYPRESS_RECORD_KEY }}
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: npm install & E2E
+      run: |
+       npm install
+       npm run cypress:run
